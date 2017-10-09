@@ -44,11 +44,16 @@
   SET name = 'Bruce Banner'
   WHERE name = 'Diana Prince' AND id = 12;
 
-
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
 
+  INSERT INTO movies (title, year, show_time)
+  VALUES ('Guardians of the Galaxy 2', 2017, '00:00');
 
 10. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 18:55 to 21:30
+
+  UPDATE movies
+  SET show_time = '21:30'
+  WHERE title = 'Guardians of the Galaxy' AND show_time = '18:55';
 
 ## Extension
 

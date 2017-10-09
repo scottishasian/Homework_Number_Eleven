@@ -77,6 +77,13 @@ UPDATE people
 SET name = 'Bruce Banner'
 WHERE name = 'Diana Prince' AND id = 12;
 
+INSERT INTO movies (title, year, show_time)
+VALUES ('Guardians of the Galaxy 2', 2017, '00:00');
+
+UPDATE movies
+SET show_time = '21:30'
+WHERE title = 'Guardians of the Galaxy' AND show_time = '18:55';
+
 SELECT * FROM movies;
 SELECT * FROM people;
 
