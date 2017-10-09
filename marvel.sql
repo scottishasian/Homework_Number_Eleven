@@ -60,6 +60,12 @@ UPDATE people
 SET name = 'Adam Conway'
 WHERE name = 'Adm Conway';
 
+DELETE FROM movies
+WHERE title = 'Batman Begins';
+
+INSERT INTO people (name)
+VALUES ('Darren Breen');
+
 
 SELECT * FROM movies;
 SELECT * FROM people;
