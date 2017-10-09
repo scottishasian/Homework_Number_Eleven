@@ -26,13 +26,23 @@
 
 6. Create a new entry in the 'people' table with the name of one of the instructors.
 
-INSERT INTO people (name)
-VALUES ('Darren Breen');
+  INSERT INTO people (name)
+  VALUES ('Darren Breen');
 
 7. Craig Morton, has decided to hijack our movie evening, Remove him from the table of people.
 
+  DELETE FROM people
+  WHERE name = 'Craig Morton';
 
 8. Somehow the list of people includes two people named 'Diana Prince'. Change these entries to the proper names ('Tony Stark' and 'David Banner')
+
+  UPDATE people
+  SET name = 'Tony Stark'
+  WHERE name = 'Diana Prince' AND id = 11;
+
+  UPDATE people
+  SET name = 'Bruce Banner'
+  WHERE name = 'Diana Prince' AND id = 12;
 
 
 9. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.

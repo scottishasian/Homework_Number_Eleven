@@ -66,6 +66,16 @@ WHERE title = 'Batman Begins';
 INSERT INTO people (name)
 VALUES ('Darren Breen');
 
+DELETE FROM people
+WHERE name = 'Craig Morton';
+
+UPDATE people
+SET name = 'Tony Stark'
+WHERE name = 'Diana Prince' AND id = 11;
+
+UPDATE people
+SET name = 'Bruce Banner'
+WHERE name = 'Diana Prince' AND id = 12;
 
 SELECT * FROM movies;
 SELECT * FROM people;
