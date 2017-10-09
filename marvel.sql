@@ -56,5 +56,12 @@ INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War'
 INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '22:00');
 INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '15:30');
 
+UPDATE people
+SET name = 'Adam Conway'
+WHERE name = 'Adm Conway';
+
+
 SELECT * FROM movies;
 SELECT * FROM people;
+
+SELECT name FROM people;

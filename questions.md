@@ -5,7 +5,15 @@
   SELECT * FROM MOVIES;
 
 2. Return ONLY the name column from the 'people' table
+
+  SELECT name FROM people;
+
 3. Oops! Someone at CodeClan spelled Adam's name wrong! Change it to reflect the proper spelling (change 'Adm Conway' to 'Adam Conway').
+
+  UPDATE people
+  SET name = 'Adam Conway'
+  WHERE name = 'Adm Conway';
+
 4. Return ONLY your name from the 'people' table.
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 6. Create a new entry in the 'people' table with the name of one of the instructors.
